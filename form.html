@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+  <title>UTS</title>
+  <style>
+    body {
+      padding-bottom: 70px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="home.html">1310520075</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <form class="navbar-form navbar-left">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Masukkan pencarian...">
+            <span class="input-group-btn">
+              <button class="btn btn-success" type="button">
+                <i class="glyphicon glyphicon-search"></i>
+              </button>
+            </span>
+          </div>
+          <!-- /input-group -->
+        </form>
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="home.html">Home</a>
+          </li>
+          <li>
+            <a href="#">Biodata</a>
+          </li>
+          <li class="active">
+            <a href="form.html">Form</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu Dropdown
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">Profile</a>
+              </li>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Setting</a>
+              </li>
+              <li role="separator" class="divider"></li>
+              <li>
+                <a href="#">Logout</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="profile.html">Profile</a>
+              </li>
+              <li>
+                <a href="home.html">Home</a>
+              </li>
+              <li>
+                <a href="settings.html">Setting</a>
+              </li>
+              <li role="separator" class="divider"></li>
+              <li>
+                <a href="logout.html">Logout</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ol class="breadcrumb">
+          <li>
+            <a href="home.html">Home</a>
+          </li>
+          <li class="active">Form</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              Menu
+            </h3>
+          </div>
+          <div class="panel-body">
+            <ul class="nav nav-pills nav-stacked">
+              <li role="presentation">
+                <a href="home.html">Home</a>
+              </li>
+              <li role="presentation" class="active">
+                <a href="form.html">Form</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="panel-danger panel">
+          <div class="panel-heading">
+            <h3 class="panel-title">Content</h3>
+          </div>
+          <div class="panel-body">
+            <form class="form-horizontal">
+              <div class="form-group has-feedback">
+                <label for="nim" class="col-sm-2 control-label">NIM</label>
+                <div class="col-sm-10">
+                  <input type="text" name="nim" class="form-control" id="nim" placeholder="Masukkan NIM" aria-describedby="nim-help">
+                  <span class="glyphicon glyphicon-subscript form-control-feedback" aria-hidden="true"></span>
+                  <span id="nim-help" class="help-block">Nomor Induk Mahasiswa (NIM), contoh: 1310520075</span>
+                </div>
+              </div>
+              <div class="form-group has-feedback">
+                <label for="nama" class="col-sm-2 control-label">Nama</label>
+                <div class="col-sm-10">
+                  <input type="text" name="nama" class="form-control" id="nama" placeholder="Masukkan nama" aria-describedby="nama-help">
+                  <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                  <span id="nama-help" class="help-block">Nama lengkap, contoh: Hairul Imam</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="laki-laki" class="col-sm-2 control-label">Jenis Kelamin</label>
+                <div class="col-sm-10">
+                  <div class="radio">
+                    <label for="laki-laki">
+                      <input type="radio" name="jenis-kelamin" id="laki-laki"> Laki-Laki
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label for="perempuan">
+                      <input type="radio" name="jenis-kelamin" id="perempuan"> Perempuan
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="semester" class="col-sm-2 control-label">Semester</label>
+                <div class="col-sm-10">
+                  <select name="semester" id="semester" class="form-control">
+                    <option value="">Pilih Semester</option>
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                    <option value="7">7</option>
+                    <option value="9">9</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-success">
+                    <i class="glyphicon glyphicon-check"></i> Daftar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              Biodata
+            </h3>
+          </div>
+          <div class="panel-body">
+            <div class="table-responsive">
+              <table class="table table-condensed table-striped">
+                <tbody>
+                  <tr>
+                    <th>Nama</th>
+                    <td>Hairul Imam</td>
+                  </tr>
+                  <tr>
+                    <th>NIM</th>
+                    <td>1310520075</td>
+                  </tr>
+                  <tr>
+                    <th>TTL</th>
+                    <td>08 Agustus 1995</td>
+                  </tr>
+                  <tr>
+                    <th>Alamat</th>
+                    <td>Sengkerang</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <p class="navbar-text">This work licensed under
+        <a href="http://www.wtfpl.net/txt/copying/" class="navbar-link" target="_blank">WTFPL License</a> by Hairul Imam</p>
+
+      <a class="btn btn-primary navbar-btn navbar-right" href="https://web.facebook.com/khyrulimam/notes?_rdc=1&_rdr" target="_blank">
+        <span class="glyphicon glyphicon-globe"></span> Catatan saya
+      </a>
+    </div>
+  </nav>
+
+  <script src="bootstrap/js/jquery-3.2.1.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
